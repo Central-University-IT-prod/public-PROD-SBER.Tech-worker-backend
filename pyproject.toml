@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["MkSerdyuk <git_user@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.1"
+fastapi = "^0.110.0"
+uvicorn = "^0.29.0"
+simplejson = "^3.19.2"
+asyncpg = "^0.29.0"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.29"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
